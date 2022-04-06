@@ -58,7 +58,7 @@ var config_data = `
         "max":99999
       },
       "Auto Start Position": {
-        "code":"Auto Start Position",
+        "code":"asp",
         "title": "Auto Start Position",
         "type":"field_image",
         "filename":"2022/field_image.png"
