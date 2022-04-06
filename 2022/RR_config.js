@@ -66,59 +66,59 @@ var config_data = `
     },
     "auton": {
       "Taxi": {
-        "code":"Auto_Taxi",
+        "code":"at",
         "title": "Taxied?",
         "type":"bool"
       },
       "Upper Cargo Scored": {
-        "code":"Auto_Upper_Scored",
+        "code":"aus",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
-        "code":"Auto_Lower_Scored",
+        "code":"als",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
       "Auto Aquired Cargo": {
-        "code":"Auto_Cargo_Acquired",
+        "code":"aca",
         "title": "Picked up more cargo?",
         "type":"bool"
       }
     },
     "teleop": {
       "Upper Cargo Scored": {
-        "code":"Teleop_Upper_Cargo_Scored",
+        "code":"tus",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
       "Upper Cargo Attempt": {
-        "code":"Teleop_Upper_Cargo_Attempt",
+        "code":"tua",
         "title": "Uppoer Cargo Attempt",
         "type":"counter"
       },
       "Lower Cargo Scored": {
-        "code":"Teleop_Lower_Cargo_Scored",
+        "code":"tls",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Attempt": {
-        "code":"Teleop_Lower_Cargo_Attempt",
+        "code":"tla",
         "title": "Lower Cargo Attempt",
         "type":"counter"
       },
       "Defense Bot": {
-        "code":"Defense_Bot",
+        "code":"db",
         "title": "Defense Bot",
         "type":"bool"
       },
       "Wallbot?": {
-        "code":"Wallbot",
+        "code":"wb",
         "title": "Wallbot?",
         "type":"bool"
       },
       "Cargo Intake From": {
-        "code":"Cargo_Intake_From",
+        "code":"ci",
         "title": "Cargo Intake From",
         "type":"radio",
         "choices":{
@@ -130,7 +130,7 @@ var config_data = `
         "defaultValue":"x"
       },
       "Shooting Spot": {
-        "code":"Shooting_Spot",
+        "code":"ss",
         "title": "Shooting Spot",
         "type":"field_image",
         "filename":"2022/field_image.png"
@@ -138,7 +138,7 @@ var config_data = `
     },
     "endgame": {
       "Climb": {
-        "code":"Climb",
+        "code":"cl",
         "title": "Climb",
         "type":"radio",
         "choices":{
@@ -151,24 +151,24 @@ var config_data = `
         "defaultValue":0
       },
       "Started Climb before Endgame": {
-        "code":"Start_Climb_Early",
+        "code":"sce",
         "title": "Started climb before EndGame",
         "type":"bool"
       },
       "Attempted Climb but failed?": {
-        "code":"Attempt_Climb",
+        "code":"ca",
         "title": "Attempt Climb but failed?",
         "type":"bool"
       },
       "Num of Robots Climbed": {
-        "code":"Num_Robots_Climbed",
+        "code":"nc",
         "title": "# of alliance bots climbed",
         "type":"counter"
       }
     },
     "postmatch": {
       "Driver Skill": {
-        "code":"Driver_Skill",
+        "code":"ds",
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
@@ -181,7 +181,7 @@ var config_data = `
         "defaultValue":"x"
       },
       "Speed Rating": {
-        "code":"Speed_Rating",
+        "code":"sr",
         "title": "Speed Rating",
         "type":"radio",
         "choices":{
@@ -194,7 +194,7 @@ var config_data = `
         "defaultValue":3
       },
       "Intake Rating": {
-        "code":"Intake_Rating",
+        "code":"ir",
         "title": "Intake Rating",
         "type":"radio",
         "choices":{
@@ -207,7 +207,7 @@ var config_data = `
         "defaultValue":0
       },
       "Shooter Rating": {
-        "code":"Shooter_Rating",
+        "code":"shr",
         "title": "Shooter Rating",
         "type":"radio",
         "choices":{
@@ -221,7 +221,7 @@ var config_data = `
         "defaultValue":0
       },
       "Defense Rating": {
-        "code":"Defense_Rating",
+        "code":"dr",
         "title": "Defense Rating",
         "type":"radio",
         "choices":{
@@ -234,29 +234,29 @@ var config_data = `
         "defaultValue":6
       },
        "Strategically held enemy cargo during match?": {
-        "code":"Enemy_Balls",
+        "code":"eb",
         "title": "Enemy Balls",
         "type":"bool"
       },
        "Swerve drive?": {
-        "code":"Swerve_Drive",
+        "code":"sd",
         "title": "Swerve drive?",
         "type":"bool"
       },
       "Died/Tipped": {
-        "code":"Died_Tipped",
+        "code":"dt",
         "title": "Died/Tipped",
         "type":"bool"
       },
       "Comments": {
-        "code":"Comments",
+        "code":"cmt",
         "title": "Comments",
         "type":"text",
         "size":15,
         "maxSize":50
       },
       "Confidence Rating": {
-        "code":"Confidence_Rating",
+        "code":"cfr",
         "title": "Confidence Rating",
         "type":"radio",
         "choices":{
