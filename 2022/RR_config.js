@@ -97,9 +97,9 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Was Defended": {
+      "Defense Bot": {
         "code":"wd",
-        "title": "Was Defended",
+        "title": "Defense Bot",
         "type":"bool"
       },
       "Wallbot?": {
@@ -165,6 +165,46 @@ var config_data = `
         },
         "defaultValue":"x"
       },
+      "Speed Rating": {
+        "code":"sr",
+        "title": "Speed Rating",
+        "type":"radio",
+        "choices":{
+          "1":"1 (slow)<br>",
+          "2":"2<br>",
+          "3":"3<br>",
+          "4":"4<br>",
+          "5":"5 (fast)"
+        },
+        "defaultValue":"3"
+      },
+      "Intake Rating": {
+        "code":"ir",
+        "title": "Intake Rating",
+        "type":"radio",
+        "choices":{
+          "b":"Below Average<br>",
+          "a":"Average<br>",
+          "g":"Good<br>",
+          "e":"Excellent<br>",
+          "x":"Did not intake"
+        },
+        "defaultValue":"x"
+      },
+      "Shooter Rating": {
+        "code":"ir",
+        "title": "Shooter Rating",
+        "type":"radio",
+        "choices":{
+          "b":"Below Average<br>",
+          "a":"Average<br>",
+          "f":"Fast, but inaccurate<br>",
+          "g":"Accurate, but slow<br>",
+          "e":"Excellent<br>",
+          "x":"Did not shoot"
+        },
+        "defaultValue":"x"
+      },
       "Defense Rating": {
         "code":"dr",
         "title": "Defense Rating",
@@ -188,27 +228,9 @@ var config_data = `
         "title": "Swerve drive?",
         "type":"bool"
       },
-       "Speed Rating": {
-        "code":"sr",
-        "title": "Speed Rating",
-        "type":"radio",
-        "choices":{
-          "1":"1 (slow)<br>",
-          "2":"2<br>",
-          "3":"3<br>",
-          "4":"4<br>",
-          "5":"5 (fast)"
-        },
-        "defaultValue":"3"
-      },
       "Died/Tipped": {
         "code":"d",
         "title": "Died/Tipped",
-        "type":"bool"
-      },
-      "Make good alliance partner?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
         "type":"bool"
       },
       "Comments": {
