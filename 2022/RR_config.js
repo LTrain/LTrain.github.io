@@ -89,12 +89,12 @@ var config_data = `
     "teleop": {
       "Upper Cargo Scored": {
         "code":"tus",
-        "title": "Uppoer Cargo Scored",
+        "title": "Upper Cargo Scored",
         "type":"counter"
       },
       "Upper Cargo Attempt": {
         "code":"tua",
-        "title": "Uppoer Cargo Attempt",
+        "title": "Upper Cargo Attempt",
         "type":"counter"
       },
       "Lower Cargo Scored": {
@@ -142,13 +142,13 @@ var config_data = `
         "title": "Climb",
         "type":"radio",
         "choices":{
-          4:"Low<br>",
-          6:"Mid<br>",
-          10:"High<br>",
-          15:"Traversal<br>",
-          0:"No Climb Achieved"
+          "4":"Low<br>",
+          "6":"Mid<br>",
+          "10":"High<br>",
+          "15":"Traversal<br>",
+          "0":"No Climb Achieved"
         },
-        "defaultValue":0
+        "defaultValue":"0"
       },
       "Started Climb before Endgame": {
         "code":"sce",
