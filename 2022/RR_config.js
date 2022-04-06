@@ -58,7 +58,7 @@ var config_data = `
         "max":99999
       },
       "Auto Start Position": {
-        "code":"as",
+        "code":"Auto Start Position",
         "title": "Auto Start Position",
         "type":"field_image",
         "filename":"2022/field_image.png"
@@ -66,49 +66,59 @@ var config_data = `
     },
     "auton": {
       "Taxi": {
-        "code":"at",
+        "code":"Auto Taxi",
         "title": "Taxied?",
         "type":"bool"
       },
       "Upper Cargo Scored": {
-        "code":"au",
+        "code":"Auto Upper Scored",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
-        "code":"al",
+        "code":"Auto Lower Scored",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
       "Auto Aquired Cargo": {
-        "code":"ac",
+        "code":"Auto Cargo Acquired",
         "title": "Picked up more cargo?",
         "type":"bool"
       }
     },
     "teleop": {
       "Upper Cargo Scored": {
-        "code":"tu",
+        "code":"Teleop Upper Cargo Scored",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
+      "Upper Cargo Attempt": {
+        "code":"Teleop Upper Cargo Attempt",
+        "title": "Uppoer Cargo Attempt",
+        "type":"counter"
+      },
       "Lower Cargo Scored": {
-        "code":"tl",
+        "code":"Teleop Lower Cargo Scored",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
+      "Lower Cargo Attempt": {
+        "code":"Teleop Lower Cargo Attempt",
+        "title": "Lower Cargo Attempt",
+        "type":"counter"
+      },
       "Defense Bot": {
-        "code":"wd",
+        "code":"Defense Bot",
         "title": "Defense Bot",
         "type":"bool"
       },
       "Wallbot?": {
-        "code":"wbt",
+        "code":"Wallbot",
         "title": "Wallbot?",
         "type":"bool"
       },
       "Cargo Intake From": {
-        "code":"cif",
+        "code":"Cargo Intake From",
         "title": "Cargo Intake From",
         "type":"radio",
         "choices":{
@@ -120,7 +130,7 @@ var config_data = `
         "defaultValue":"x"
       },
       "Shooting Spot": {
-        "code":"ss",
+        "code":"Shooting Spot",
         "title": "Shooting Spot",
         "type":"field_image",
         "filename":"2022/field_image.png"
@@ -128,128 +138,136 @@ var config_data = `
     },
     "endgame": {
       "Climb": {
-        "code":"c",
+        "code":"Climb",
         "title": "Climb",
         "type":"radio",
         "choices":{
-          "1":"Low<br>",
-          "2":"Mid<br>",
-          "3":"High<br>",
-          "4":"Traversal<br>",
-          "a":"Attempted but failed<br>",
-          "x":"Not attempted"
+          4:"Low<br>",
+          6:"Mid<br>",
+          10:"High<br>",
+          15:"Traversal<br>",
+          0:"No Climb Achieved"
         },
-        "defaultValue":"x"
+        "defaultValue":0
       },
       "Started Climb before Endgame": {
-        "code":"be",
+        "code":"Start Climb Early",
         "title": "Started climb before EndGame",
         "type":"bool"
       },
+      "Attempted Climb but failed?": {
+        "code":"Attempt Climb",
+        "title": "Attempt Climb but failed?",
+        "type":"bool"
+      },
       "Num of Robots Climbed": {
-        "code":"cn",
+        "code":"Num Robots Climbed",
         "title": "# of alliance bots climbed",
         "type":"counter"
       }
     },
     "postmatch": {
       "Driver Skill": {
-        "code":"ds",
+        "code":"Driver Skill",
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
+          1:"Not Effective<br>",
+          2:"Average<br>",
+          3:"Effective<br>",
+          4:"Very Effective<br>",
           "x":"Not Observed"
         },
         "defaultValue":"x"
       },
       "Speed Rating": {
-        "code":"sr",
+        "code":"Speed Rating",
         "title": "Speed Rating",
         "type":"radio",
         "choices":{
-          "1":"1 (slow)<br>",
-          "2":"2<br>",
-          "3":"3<br>",
-          "4":"4<br>",
-          "5":"5 (fast)"
+          1:"1 (slow)<br>",
+          2:"2<br>",
+          3:"3<br>",
+          4:"4<br>",
+          5:"5 (fast)"
         },
-        "defaultValue":"3"
+        "defaultValue":3
       },
       "Intake Rating": {
-        "code":"ir",
+        "code":"Intake Rating",
         "title": "Intake Rating",
         "type":"radio",
         "choices":{
-          "b":"Below Average<br>",
-          "a":"Average<br>",
-          "g":"Good<br>",
-          "e":"Excellent<br>",
-          "x":"Did not intake"
+          1:"Below Average<br>",
+          2:"Average<br>",
+          3:"Good<br>",
+          4:"Excellent<br>",
+          0:"Did not intake"
         },
-        "defaultValue":"x"
+        "defaultValue":0
       },
       "Shooter Rating": {
-        "code":"hr",
+        "code":"Shooter Rating",
         "title": "Shooter Rating",
         "type":"radio",
         "choices":{
-          "b":"Below Average<br>",
-          "a":"Average<br>",
-          "f":"Fast, but inaccurate<br>",
-          "g":"Accurate, but slow<br>",
-          "e":"Excellent<br>",
-          "x":"Did not shoot"
+          1:"Below Average<br>",
+          2:"Average<br>",
+          3:"Fast, but inaccurate<br>",
+          3:"Accurate, but slow<br>",
+          4:"Excellent<br>",
+          0:"Did not shoot"
         },
-        "defaultValue":"x"
+        "defaultValue":0
       },
       "Defense Rating": {
-        "code":"dr",
+        "code":"Defense Rating",
         "title": "Defense Rating",
         "type":"radio",
         "choices":{
-          "b":"Below Average<br>",
-          "a":"Average<br>",
-          "g":"Good<br>",
-          "e":"Excellent<br>",
-          "x":"Did not play defense"
+          1:"Below Average<br>",
+          2:"Average<br>",
+          3:"Good<br>",
+          4:"Excellent<br>",
+          6:"Did not play defense"
         },
-        "defaultValue":"x"
+        "defaultValue":6
       },
        "Strategically held enemy cargo during match?": {
-        "code":"hc",
+        "code":"Enemy Balls",
         "title": "Enemy Balls",
         "type":"bool"
       },
        "Swerve drive?": {
-        "code":"sd",
+        "code":"Swerve Drive",
         "title": "Swerve drive?",
         "type":"bool"
       },
       "Died/Tipped": {
-        "code":"d",
+        "code":"Died Tipped",
         "title": "Died/Tipped",
         "type":"bool"
       },
       "Comments": {
-        "code":"co",
+        "code":"Comments",
         "title": "Comments",
         "type":"text",
         "size":15,
         "maxSize":50
       },
       "Confidence Rating": {
-        "code":"cnf",
+        "code":"Confidence Rating",
         "title": "Confidence Rating",
         "type":"radio",
         "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
+          5:"Extremely Confident<br>",
+          4:"Very Confident<br>",
+          3:"Confident",
+          2:"Average<br>",
+          1:"Not Confident"
+          0:"TRASH"
       },
-       "defaultValue":"a"
+       "defaultValue":3
     }
     }
   }
