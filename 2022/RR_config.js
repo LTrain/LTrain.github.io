@@ -192,7 +192,7 @@ var config_data = `
         "defaultValue":"x"
       },
       "Shooter Rating": {
-        "code":"sr",
+        "code":"hr",
         "title": "Shooter Rating",
         "type":"radio",
         "choices":{
