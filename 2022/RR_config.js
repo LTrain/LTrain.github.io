@@ -178,7 +178,7 @@ var config_data = `
           "4":"Very Effective<br>",
           "0":"Not Observed"
         },
-        "defaultValue":"x"
+        "defaultValue":"0"
       },
       "Speed Rating": {
         "code":"sr",
