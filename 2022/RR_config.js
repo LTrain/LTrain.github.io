@@ -176,7 +176,7 @@ var config_data = `
           "2":"Average<br>",
           "3":"Effective<br>",
           "4":"Very Effective<br>",
-          "x":"Not Observed"
+          "0":"Not Observed"
         },
         "defaultValue":"x"
       },
