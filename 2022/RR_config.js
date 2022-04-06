@@ -172,10 +172,10 @@ var config_data = `
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          1:"Not Effective<br>",
-          2:"Average<br>",
-          3:"Effective<br>",
-          4:"Very Effective<br>",
+          "1":"Not Effective<br>",
+          "2":"Average<br>",
+          "3":"Effective<br>",
+          "4":"Very Effective<br>",
           "x":"Not Observed"
         },
         "defaultValue":"x"
@@ -185,53 +185,53 @@ var config_data = `
         "title": "Speed Rating",
         "type":"radio",
         "choices":{
-          1:"1 (slow)<br>",
-          2:"2<br>",
-          3:"3<br>",
-          4:"4<br>",
-          5:"5 (fast)"
+          "1":"1 (slow)<br>",
+          "2":"2<br>",
+          "3":"3<br>",
+          "4":"4<br>",
+          "5":"5 (fast)"
         },
-        "defaultValue":3
+        "defaultValue":"3"
       },
       "Intake Rating": {
         "code":"ir",
         "title": "Intake Rating",
         "type":"radio",
         "choices":{
-          1:"Below Average<br>",
-          2:"Average<br>",
-          3:"Good<br>",
-          4:"Excellent<br>",
-          0:"Did not intake"
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Good<br>",
+          "4":"Excellent<br>",
+          "0":"Did not intake"
         },
-        "defaultValue":0
+        "defaultValue":"0"
       },
       "Shooter Rating": {
         "code":"shr",
         "title": "Shooter Rating",
         "type":"radio",
         "choices":{
-          1:"Below Average<br>",
-          2:"Average<br>",
-          3:"Fast, but inaccurate<br>",
-          3:"Accurate, but slow<br>",
-          4:"Excellent<br>",
-          0:"Did not shoot"
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Fast, but inaccurate<br>",
+          "4":"Accurate, but slow<br>",
+          "5":"Excellent<br>",
+          "0":"Did not shoot"
         },
-        "defaultValue":0
+        "defaultValue":"0"
       },
       "Defense Rating": {
         "code":"dr",
         "title": "Defense Rating",
         "type":"radio",
         "choices":{
-          1:"Below Average<br>",
-          2:"Average<br>",
-          3:"Good<br>",
-          4:"Excellent<br>",
-          6:"Did not play defense"
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Good<br>",
+          "4":"Excellent<br>",
+          "6":"Did not play defense"
         },
-        "defaultValue":6
+        "defaultValue":"6"
       },
        "Strategically held enemy cargo during match?": {
         "code":"eb",
