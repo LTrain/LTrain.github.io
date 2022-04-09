@@ -58,7 +58,7 @@ var config_data = `
         "max":99999
       },
       "Auto Start Position": {
-        "code":"asp",
+        "code":"as",
         "title": "Auto Start Position",
         "type":"field_image",
         "filename":"2022/field_image.png"
@@ -71,54 +71,44 @@ var config_data = `
         "type":"bool"
       },
       "Upper Cargo Scored": {
-        "code":"aus",
+        "code":"au",
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
-        "code":"als",
+        "code":"al",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
       "Auto Aquired Cargo": {
-        "code":"aca",
+        "code":"ac",
         "title": "Picked up more cargo?",
         "type":"bool"
       }
     },
     "teleop": {
       "Upper Cargo Scored": {
-        "code":"tus",
-        "title": "Upper Cargo Scored",
-        "type":"counter"
-      },
-      "Upper Cargo Attempt": {
-        "code":"tua",
-        "title": "Upper Cargo Attempt",
+        "code":"tu",
+        "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
-        "code":"tls",
+        "code":"tl",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Lower Cargo Attempt": {
-        "code":"tla",
-        "title": "Lower Cargo Attempt",
-        "type":"counter"
-      },
-      "Defense Bot": {
-        "code":"db",
-        "title": "Defense Bot",
+      "Was Defended": {
+        "code":"wd",
+        "title": "Was Defended",
         "type":"bool"
       },
       "Wallbot?": {
-        "code":"wb",
+        "code":"wbt",
         "title": "Wallbot?",
         "type":"bool"
       },
       "Cargo Intake From": {
-        "code":"ci",
+        "code":"cif",
         "title": "Cargo Intake From",
         "type":"radio",
         "choices":{
@@ -138,30 +128,26 @@ var config_data = `
     },
     "endgame": {
       "Climb": {
-        "code":"cl",
+        "code":"c",
         "title": "Climb",
         "type":"radio",
         "choices":{
-          "4":"Low<br>",
-          "6":"Mid<br>",
-          "10":"High<br>",
-          "15":"Traversal<br>",
-          "0":"No Climb Achieved"
+          "1":"Low<br>",
+          "2":"Mid<br>",
+          "3":"High<br>",
+          "4":"Traversal<br>",
+          "a":"Attempted but failed<br>",
+          "x":"Not attempted"
         },
-        "defaultValue":"0"
+        "defaultValue":"x"
       },
       "Started Climb before Endgame": {
-        "code":"sce",
+        "code":"be",
         "title": "Started climb before EndGame",
         "type":"bool"
       },
-      "Attempted Climb but failed?": {
-        "code":"ca",
-        "title": "Attempt Climb but failed?",
-        "type":"bool"
-      },
       "Num of Robots Climbed": {
-        "code":"nc",
+        "code":"cn",
         "title": "# of alliance bots climbed",
         "type":"counter"
       }
@@ -172,15 +158,37 @@ var config_data = `
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "1":"Not Effective<br>",
-          "2":"Average<br>",
-          "3":"Effective<br>",
-          "4":"Very Effective<br>",
-          "0":"Not Observed"
+          "n":"Not Effective<br>",
+          "a":"Average<br>",
+          "v":"Very Effective<br>",
+          "x":"Not Observed"
         },
-        "defaultValue":"0"
+        "defaultValue":"x"
       },
-      "Speed Rating": {
+      "Defense Rating": {
+        "code":"dr",
+        "title": "Defense Rating",
+        "type":"radio",
+        "choices":{
+          "b":"Below Average<br>",
+          "a":"Average<br>",
+          "g":"Good<br>",
+          "e":"Excellent<br>",
+          "x":"Did not play defense"
+        },
+        "defaultValue":"x"
+      },
+       "Strategically held enemy cargo during match?": {
+        "code":"hc",
+        "title": "Enemy Balls",
+        "type":"bool"
+      },
+       "Swerve drive?": {
+        "code":"sd",
+        "title": "Swerve drive?",
+        "type":"bool"
+      },
+       "Speed Rating": {
         "code":"sr",
         "title": "Speed Rating",
         "type":"radio",
@@ -193,81 +201,33 @@ var config_data = `
         },
         "defaultValue":"3"
       },
-      "Intake Rating": {
-        "code":"ir",
-        "title": "Intake Rating",
-        "type":"radio",
-        "choices":{
-          "1":"Below Average<br>",
-          "2":"Average<br>",
-          "3":"Good<br>",
-          "4":"Excellent<br>",
-          "0":"Did not intake"
-        },
-        "defaultValue":"0"
-      },
-      "Shooter Rating": {
-        "code":"shr",
-        "title": "Shooter Rating",
-        "type":"radio",
-        "choices":{
-          "1":"Below Average<br>",
-          "2":"Average<br>",
-          "3":"Fast, but inaccurate<br>",
-          "4":"Accurate, but slow<br>",
-          "5":"Excellent<br>",
-          "0":"Did not shoot"
-        },
-        "defaultValue":"0"
-      },
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
-        "type":"radio",
-        "choices":{
-          "1":"Below Average<br>",
-          "2":"Average<br>",
-          "3":"Good<br>",
-          "4":"Excellent<br>",
-          "6":"Did not play defense"
-        },
-        "defaultValue":"6"
-      },
-       "Strategically held enemy cargo during match?": {
-        "code":"eb",
-        "title": "Enemy Balls",
-        "type":"bool"
-      },
-       "Swerve drive?": {
-        "code":"sd",
-        "title": "Swerve drive?",
-        "type":"bool"
-      },
       "Died/Tipped": {
-        "code":"dt",
+        "code":"d",
         "title": "Died/Tipped",
         "type":"bool"
       },
+      "Make good alliance partner?": {
+        "code":"all",
+        "title": "Make good alliance partner?",
+        "type":"bool"
+      },
       "Comments": {
-        "code":"cmt",
+        "code":"co",
         "title": "Comments",
         "type":"text",
         "size":15,
         "maxSize":50
       },
       "Confidence Rating": {
-        "code":"cfr",
+        "code":"cnf",
         "title": "Confidence Rating",
         "type":"radio",
         "choices":{
-          "5":"Extremely Confident<br>",
-          "4":"Very Confident<br>",
-          "3":"Confident",
-          "2":"Average<br>",
-          "1":"Not Confident"
-          "0":"TRASH"
+          "v":"Very Confident<br>",
+          "a":"Average<br>",
+          "n":"Not Confident"
       },
-       "defaultValue":"3"
+       "defaultValue":"a"
     }
     }
   }
