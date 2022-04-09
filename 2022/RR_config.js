@@ -66,7 +66,7 @@ var config_data = `
     },
     "auton": {
       "Taxi": {
-        "code":"at",
+        "code":"Auton_Taxi",
         "title": "Taxied?",
         "type":"bool"
       },
