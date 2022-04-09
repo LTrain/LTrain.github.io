@@ -214,20 +214,6 @@ var config_data = `
         "size":15,
         "maxSize":50
       },
-      "Confidence Rating": {
-        "code":"cnf",
-        "title": "Confidence Rating",
-        "type":"radio",
-        "choices":{
-          "5":"Extremely Confident<br>",
-          "4":"Very Confident<br>",
-          "3":"Confident",
-          "2":"Average<br>",
-          "1":"Not Confident"
-          "0":"TRASH"
-      },
-       "defaultValue":"3"
-    }
     }
   }
 }`;
