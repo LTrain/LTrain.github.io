@@ -72,7 +72,7 @@ var config_data = `
       },
       "Upper Cargo Scored": {
         "code":"au",
-        "title": "Uppoer Cargo Scored",
+        "title": "Upper Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Scored": {
@@ -88,18 +88,28 @@ var config_data = `
     },
     "teleop": {
       "Upper Cargo Scored": {
-        "code":"tu",
-        "title": "Uppoer Cargo Scored",
+        "code":"tus",
+        "title": "Upper Cargo Scored",
+        "type":"counter"
+      },
+      "Upper Cargo Attempt": {
+        "code":"tua",
+        "title": "Upper Cargo Attempt",
         "type":"counter"
       },
       "Lower Cargo Scored": {
-        "code":"tl",
+        "code":"tls",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Was Defended": {
+      "Lower Cargo Attempt": {
+        "code":"tla",
+        "title": "Lower Cargo Attempt",
+        "type":"counter"
+      },
+      "Defense Bot": {
         "code":"wd",
-        "title": "Was Defended",
+        "title": "Defense Bot?",
         "type":"bool"
       },
       "Wallbot?": {
@@ -158,37 +168,15 @@ var config_data = `
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
+          "1":"Not Effective<br>",
+          "2":"Average<br>",
+          "3":"Effective<br>",
+          "4":"Very Effective<br>",
+          "0":"Not Observed"
         },
-        "defaultValue":"x"
+        "defaultValue":"0"
       },
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
-        "type":"radio",
-        "choices":{
-          "b":"Below Average<br>",
-          "a":"Average<br>",
-          "g":"Good<br>",
-          "e":"Excellent<br>",
-          "x":"Did not play defense"
-        },
-        "defaultValue":"x"
-      },
-       "Strategically held enemy cargo during match?": {
-        "code":"hc",
-        "title": "Enemy Balls",
-        "type":"bool"
-      },
-       "Swerve drive?": {
-        "code":"sd",
-        "title": "Swerve drive?",
-        "type":"bool"
-      },
-       "Speed Rating": {
+      "Speed Rating": {
         "code":"sr",
         "title": "Speed Rating",
         "type":"radio",
@@ -201,14 +189,59 @@ var config_data = `
         },
         "defaultValue":"3"
       },
+      "Intake Rating": {
+        "code":"ir",
+        "title": "Intake Rating",
+        "type":"radio",
+        "choices":{
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Good<br>",
+          "4":"Excellent<br>",
+          "0":"Did not intake"
+        },
+        "defaultValue":"0"
+      },
+      "Shooter Rating": {
+        "code":"shr",
+        "title": "Shooter Rating",
+        "type":"radio",
+        "choices":{
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Fast, but inaccurate<br>",
+          "4":"Accurate, but slow<br>",
+          "5":"Excellent<br>",
+          "0":"Did not shoot"
+        },
+        "defaultValue":"0"
+      },
+      "Defense Rating": {
+        "code":"dr",
+        "title": "Defense Rating",
+        "type":"radio",
+        "choices":{
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Good<br>",
+          "4":"Excellent<br>",
+          "5":"Did not play defense"
+        },
+        "defaultValue":"5"
+      },
+       "Strategically held enemy cargo during match?": {
+        "code":"hc",
+        "title": "Enemy Balls",
+        "type":"bool"
+      },
+       "Swerve drive?": {
+        "code":"sd",
+        "title": "Swerve drive?",
+        "type":"bool"
+      },
       "Died/Tipped": {
         "code":"d",
         "title": "Died/Tipped",
-        "type":"bool"
-      },
-      "Make good alliance partner?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
         "type":"bool"
       },
       "Comments": {
@@ -223,11 +256,14 @@ var config_data = `
         "title": "Confidence Rating",
         "type":"radio",
         "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
+          "5":"Extremely Confident<br>",
+          "4":"Very Confident<br>",
+          "3":"Confident",
+          "2":"Average<br>",
+          "1":"Not Confident"
+          "0":"TRASH"
       },
-       "defaultValue":"a"
+       "defaultValue":"3"
     }
     }
   }
