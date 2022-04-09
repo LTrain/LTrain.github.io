@@ -213,7 +213,18 @@ var config_data = `
         "type":"text",
         "size":15,
         "maxSize":50
-    },
+      },
+      "Confidence Rating": {
+        "code":"cnf",
+        "title": "Confidence Rating",
+        "type":"radio",
+        "choices":{
+          "v":"Very Confident<br>",
+          "a":"Average<br>",
+          "n":"Not Confident"
+      },
+       "defaultValue":"a"
+    }
     }
   }
 }`;
