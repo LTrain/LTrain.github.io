@@ -92,19 +92,9 @@ var config_data = `
         "title": "Upper Cargo Scored",
         "type":"counter"
       },
-      "Upper Cargo Attempt": {
-        "code":"tua",
-        "title": "Upper Cargo Attempt",
-        "type":"counter"
-      },
       "Lower Cargo Scored": {
         "code":"tls",
         "title": "Lower Cargo Scored",
-        "type":"counter"
-      },
-      "Lower Cargo Attempt": {
-        "code":"tla",
-        "title": "Lower Cargo Attempt",
         "type":"counter"
       },
       "Defense Bot": {
