@@ -272,6 +272,5 @@ var config_data = `
       },
        "defaultValue":"2"
     }
-    }
   }
 }`;
