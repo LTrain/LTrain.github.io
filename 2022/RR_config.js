@@ -177,7 +177,7 @@ var config_data = `
           "2":"Average<br>",
           "3":"Effective<br>",
           "4":"Very Effective<br>",
-          "x":"Not Observed<br>"
+          "x":"Not Observed"
         },
         "defaultValue":"x"
       },
@@ -204,7 +204,7 @@ var config_data = `
           "2":"Average<br>",
           "3":"Good<br>",
           "4":"Excellent<br>",
-          "x":"Not Observed<br>"
+          "x":"Not Observed"
         },
         "defaultValue":"x"
       },
@@ -219,7 +219,7 @@ var config_data = `
           "3":"Fast, but inaccurate<br>",
           "4":"Accurate, but slow<br>",
           "5":"Excellent<br>",
-          "x":"Not Observed<br>"
+          "x":"Not Observed"
         },
         "defaultValue":"x"
       },
@@ -268,7 +268,7 @@ var config_data = `
           "3":"Confident<br>",
           "2":"Average<br>",
           "1":"Not Confident<br>",
-          "0":"TRASH<br>"
+          "0":"TRASH"
       },
        "defaultValue":"2"
     }
