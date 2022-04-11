@@ -151,6 +151,11 @@ var config_data = `
         },
         "defaultValue":"x"
       },
+      "Time to achieve climb": {
+        "code":"ct",
+        "title": "Time to achieve climb",
+        "type":"counter"
+      }
       "Started Climb before Endgame": {
         "code":"be",
         "title": "Started climb before EndGame",
