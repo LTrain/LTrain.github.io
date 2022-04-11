@@ -172,7 +172,7 @@ var config_data = `
           "2":"Average<br>",
           "3":"Effective<br>",
           "4":"Very Effective<br>",
-          "0":"Not Observed"
+          "0":"Not Observed"<br>
         },
         "defaultValue":"0"
       },
@@ -198,7 +198,7 @@ var config_data = `
           "2":"Average<br>",
           "3":"Good<br>",
           "4":"Excellent<br>",
-          "0":"Did not intake"
+          "0":"Did not intake"<br>
         },
         "defaultValue":"0"
       },
@@ -212,7 +212,7 @@ var config_data = `
           "3":"Fast, but inaccurate<br>",
           "4":"Accurate, but slow<br>",
           "5":"Excellent<br>",
-          "0":"Did not shoot"
+          "0":"Did not shoot"<br>
         },
         "defaultValue":"0"
       },
