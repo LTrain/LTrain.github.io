@@ -92,11 +92,21 @@ var config_data = `
         "title": "Upper Cargo Scored",
         "type":"counter"
       },
+      "Upper Cargo Attempted": {
+        "code":"tua",
+        "title": "Upper Cargo Attempted",
+        "type":"counter"
+      }, 
       "Lower Cargo Scored": {
         "code":"tls",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
+      "Lower Cargo Attempted": {
+        "code":"tla",
+        "title": "Lower Cargo Attempted",
+        "type":"counter"
+      },      
       "Defense Bot": {
         "code":"wd",
         "title": "Defense Bot?",
