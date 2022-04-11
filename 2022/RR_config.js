@@ -156,6 +156,11 @@ var config_data = `
         "title": "Started climb before EndGame",
         "type":"bool"
       },
+      "Time to Climb"
+        "code":"ct",
+        "title":"Time to execute climb",
+        "type":"counter"
+      },
       "Num of Robots Climbed": {
         "code":"cn",
         "title": "# of alliance bots climbed",
