@@ -260,8 +260,8 @@ var config_data = `
           "4":"Very Confident<br>",
           "3":"Confident<br>",
           "2":"Average<br>",
-          "1":"Not Confident",
-          "0":"TRASH"
+          "1":"Not Confident<br>",
+          "0":"TRASH<br>"
       },
        "defaultValue":"2"
     }
