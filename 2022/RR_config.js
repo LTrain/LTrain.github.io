@@ -268,7 +268,7 @@ var config_data = `
           "2":"Average<br>",
           "3":"Confident<br>",
           "4":"Very Confident<br>",
-          "5":"Extremely Confident",
+          "5":"Extremely Confident"
         },
        "defaultValue":"2"
       }
