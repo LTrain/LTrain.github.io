@@ -177,9 +177,9 @@ var config_data = `
           "2":"Average<br>",
           "3":"Effective<br>",
           "4":"Very Effective<br>",
-          "0":"Not Observed"<br>
+          "x":"Not Observed<br>"
         },
-        "defaultValue":"0"
+        "defaultValue":"x"
       },
       "Speed Rating": {
         "code":"sr",
@@ -199,27 +199,29 @@ var config_data = `
         "title": "Intake Rating",
         "type":"radio",
         "choices":{
+          "0":"Did not intake<br>",
           "1":"Below Average<br>",
           "2":"Average<br>",
           "3":"Good<br>",
           "4":"Excellent<br>",
-          "0":"Did not intake"<br>
+          "x":"Not Observed<br>"
         },
-        "defaultValue":"0"
+        "defaultValue":"x"
       },
       "Shooter Rating": {
         "code":"shr",
         "title": "Shooter Rating",
         "type":"radio",
         "choices":{
+          "0":"Did not shoot<br>",
           "1":"Below Average<br>",
           "2":"Average<br>",
           "3":"Fast, but inaccurate<br>",
           "4":"Accurate, but slow<br>",
           "5":"Excellent<br>",
-          "0":"Did not shoot"<br>
+          "x":"Not Observed<br>"
         },
-        "defaultValue":"0"
+        "defaultValue":"x"
       },
       "Defense Rating": {
         "code":"dr",
