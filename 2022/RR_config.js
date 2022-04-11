@@ -57,6 +57,11 @@ var config_data = `
         "min":1,
         "max":99999
       },
+      "Human Player": {
+        "code":"hp",
+        "title": "Does your team have the human palyer?",
+        "type":"bool"
+      },
       "Auto Start Position": {
         "code":"as",
         "title": "Auto Start Position",
