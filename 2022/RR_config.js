@@ -269,9 +269,9 @@ var config_data = `
           "3":"Confident<br>",
           "4":"Very Confident<br>",
           "5":"Extremely Confident",
-      },
+        },
        "defaultValue":"2"
-    }
+      }
     }
   }
 }`;
