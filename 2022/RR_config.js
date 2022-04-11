@@ -263,12 +263,12 @@ var config_data = `
         "title": "Confidence Rating",
         "type":"radio",
         "choices":{
-          "5":"Extremely Confident<br>",
-          "4":"Very Confident<br>",
-          "3":"Confident<br>",
-          "2":"Average<br>",
+          "0":"TRASH<br>",
           "1":"Not Confident<br>",
-          "0":"TRASH"
+          "2":"Average<br>",
+          "3":"Confident<br>",
+          "4":"Very Confident<br>",
+          "5":"Extremely Confident",
       },
        "defaultValue":"2"
     }
