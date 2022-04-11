@@ -219,11 +219,11 @@ var config_data = `
         "title": "Confidence Rating",
         "type":"radio",
         "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
+          "3":"Very Confident<br>",
+          "2":"Average<br>",
+          "1":"Not Confident"
       },
-       "defaultValue":"a"
+       "defaultValue":"2"
     }
     }
   }
