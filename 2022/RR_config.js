@@ -189,6 +189,33 @@ var config_data = `
         },
         "defaultValue":"3"
       },
+      "Intake Rating": {
+        "code":"ir",
+        "title": "Intake Rating",
+        "type":"radio",
+        "choices":{
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Good<br>",
+          "4":"Excellent<br>",
+          "0":"Did not intake"
+        },
+        "defaultValue":"0"
+      },
+      "Shooter Rating": {
+        "code":"shr",
+        "title": "Shooter Rating",
+        "type":"radio",
+        "choices":{
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Fast, but inaccurate<br>",
+          "4":"Accurate, but slow<br>",
+          "5":"Excellent<br>",
+          "0":"Did not shoot"
+        },
+        "defaultValue":"0"
+      },
       "Defense Rating": {
         "code":"dr",
         "title": "Defense Rating",
