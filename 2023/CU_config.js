@@ -96,6 +96,15 @@ var config_data = `
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
+    { "name": "Started with Piece?",
+      "code": "ap",
+      "type":"radio",
+      "choices": {
+        "o": "Cone<br>",
+        "u": "Cube<br>",
+        "n": "None<br>",
+        "x": "Not observed"
+      },
       "defaultValue": "x"
     }
   ],
