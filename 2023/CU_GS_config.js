@@ -17,7 +17,7 @@ var config_data = `
       "code": "e",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "2023midtr",
       "required": "true",
       "disabled": "true"
     },
@@ -83,6 +83,16 @@ var config_data = `
       "showFlip": "false",
       "showUndo": "false",
       "shape": "circle 12 black red true"
+    },
+    { "name": "Start with Piece?",
+      "code": "sp",
+      "gsCol": "autoDocked",
+      "type":"radio",
+      "choices": {
+        "o": "Cone<br>",
+        "u": "Cube<br>",
+        "n": "None<br>",
+        "x": "Not observed"
     },
     { "name": "Crossed Cable",
       "code": "acc",
@@ -158,6 +168,18 @@ var config_data = `
       "choices": {
         "o": "Cone<br>",
         "u": "Cube<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
+    }
+    { "name": "Substation Pick UP",
+      "code": "spu",
+      "gsCol": "substation PickUp",
+      "type": "radio",
+      "choices": {
+        "u": "Substation Upper<br>",
+        "l": "Substation Lower<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
       },
@@ -252,6 +274,49 @@ var config_data = `
       "code": "dc",
       "gsCol": "droppedCones",
       "type": "bool"
+    },
+    { "name": "Intake Rating": {
+        "code":"ir",
+        "title": "Intake Rating",
+        "type":"radio",
+        "choices":{
+          "0":"Did not intake<br>",
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Good<br>",
+          "4":"Excellent<br>",
+          "x":"Not Observed"
+        },
+        "defaultValue":"x"
+    },
+    { "name": "Deployment Rating": {
+        "code":"dr",
+        "title": "Deployment Rating",
+        "type":"radio",
+        "choices":{
+          "0":"Did not shoot<br>",
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Fast, but inaccurate<br>",
+          "4":"Accurate, but slow<br>",
+          "5":"Excellent<br>",
+          "x":"Not Observed"
+        },
+        "defaultValue":"x"
+    },
+    { "name": "Confidence Rating": {
+	        "code":"cnf",
+	        "title": "Confidence Rating",
+	        "type":"radio",
+	        "choices":{
+	          "0":"TRASH<br>",
+	          "1":"Not Confident<br>",
+	          "2":"Average<br>",
+	          "3":"Confident<br>",
+	          "4":"Very Confident<br>",
+	          "5":"Extremely Confident"
+	        },
+	       "defaultValue":"2"
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
