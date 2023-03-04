@@ -85,8 +85,8 @@ var config_data = `
       "shape": "circle 12 black red true"
     },
     { "name": "Start with Piece?",
-      "code": "sp",
-      "gsCol": "autoDocked",
+      "code": "ap",
+      "gsCol": "Startwithpiece",
       "type":"radio",
       "choices": {
         "o": "Cone<br>",
