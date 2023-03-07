@@ -174,7 +174,7 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
-    }
+    },
     { "name": "Substation Pick UP",
       "code": "spu",
       "gsCol": "substation PickUp",
