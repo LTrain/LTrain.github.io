@@ -277,7 +277,7 @@ var config_data = `
       "gsCol": "droppedCones",
       "type": "bool"
     },
-    { "name": "Intake Rating": {
+    { "name": "Intake Rating",
         "code":"ir",
         "title": "Intake Rating",
         "type":"radio",
@@ -291,7 +291,7 @@ var config_data = `
         },
         "defaultValue":"x"
     },
-    { "name": "Deployment Rating": {
+    { "name": "Deployment Rating",
         "code":"dr",
         "title": "Deployment Rating",
         "type":"radio",
@@ -306,7 +306,7 @@ var config_data = `
         },
         "defaultValue":"x"
     },
-    { "name": "Confidence Rating": {
+    { "name": "Confidence Rating",
 	        "code":"cnf",
 	        "title": "Confidence Rating",
 	        "type":"radio",
