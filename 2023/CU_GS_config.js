@@ -93,6 +93,8 @@ var config_data = `
         "u": "Cube<br>",
         "n": "None<br>",
         "x": "Not observed"
+      },
+      "defaultValue": "x"
     },
     { "name": "Crossed Cable",
       "code": "acc",
