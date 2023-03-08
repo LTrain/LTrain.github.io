@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "2023midtr",
       "required": "true",
       "disabled": "true"
     },
@@ -57,7 +57,7 @@ var config_data = `
     },
     { "name": "Auto Start Position",
       "code": "as",
-      "type": "clickable_image",
+      "type": "field_image",
       "filename": "2023/field_image.png",
       "clickRestriction": "one",
       "shape": "circle 5 black red true"
@@ -74,6 +74,17 @@ var config_data = `
       "showFlip": "false",
       "showUndo": "false",
       "shape": "circle 12 black red true"
+    },
+    { "name": "Start with Piece?",
+      "code": "ap",
+      "type":"radio",
+      "choices": {
+        "o": "Cone<br>",
+        "u": "Cube<br>",
+        "n": "None<br>",
+        "x": "Not observed"
+      },
+      "defaultValue": "x"
     },
     { "name": "Crossed Cable",
       "code": "acc",
@@ -118,18 +129,13 @@ var config_data = `
     },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
-      "type": "counter",
-      "cycleTimer": "tct"
-    },
-    { "name": "Was Fed<br>Game Pieces",
-      "code": "wf",
-      "type": "bool"
+      "type": "counter"
     },
     { "name": "Was Defended",
       "code": "wd",
       "type": "bool"
     },
-    { "name": "Who Defended this bot",
+    { "name": "Who Defended this bot<br>(Team #)",
       "code": "who",
       "type": "text"
     },
@@ -137,12 +143,23 @@ var config_data = `
       "code": "lnk",
       "type": "bool"
     },
-    { "name": "Floor Pickup",
+    { "name": "Floor Pick UP",
       "code": "fpu",
       "type": "radio",
       "choices": {
-        "o": "Cones<br>",
-        "u": "Cubes<br>",
+        "o": "Cone<br>",
+        "u": "Cube<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Substation Pick UP",
+      "code": "spu",
+      "type": "radio",
+      "choices": {
+        "u": "Substation Upper<br>",
+        "l": "Substation Lower<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
       },
@@ -169,10 +186,6 @@ var config_data = `
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
       "type": "counter"
-    },
-    { "name": "Links Scored",
-      "code": "ls",
-      "type": "counter"
     }
   ],
   "postmatch": [
@@ -186,6 +199,10 @@ var config_data = `
         "x": "Not Observed"
       },
       "defaultValue": "x"
+    },
+    { "name": "Links Scored",
+      "code": "ls",
+      "type": "counter"
     },
     { "name": "Defense Rating",
       "code": "dr",
@@ -205,6 +222,7 @@ var config_data = `
     },
     { "name": "Speed Rating",
       "code": "sr",
+      "gsCol": "speedRating",
       "type": "radio",
       "choices": {
         "1": "1 (slow)<br>",
@@ -226,6 +244,49 @@ var config_data = `
     { "name": "Dropped Cones (>2)",
       "code": "dc",
       "type": "bool"
+    },
+    { "name": "Intake Rating",
+        "code":"ir",
+        "title": "Intake Rating",
+        "type":"radio",
+        "choices":{
+          "0":"Did not intake<br>",
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Good<br>",
+          "4":"Excellent<br>",
+          "x":"Not Observed"
+        },
+        "defaultValue":"x"
+    },
+    { "name": "Deployment Rating",
+        "code":"dr",
+        "title": "Deployment Rating",
+        "type":"radio",
+        "choices":{
+          "0":"Did not shoot<br>",
+          "1":"Below Average<br>",
+          "2":"Average<br>",
+          "3":"Fast, but inaccurate<br>",
+          "4":"Accurate, but slow<br>",
+          "5":"Excellent<br>",
+          "x":"Not Observed"
+        },
+        "defaultValue":"x"
+    },
+    { "name": "Confidence Rating",
+	        "code":"cnf",
+	        "title": "Confidence Rating",
+	        "type":"radio",
+	        "choices":{
+	          "0":"TRASH<br>",
+	          "1":"Not Confident<br>",
+	          "2":"Average<br>",
+	          "3":"Confident<br>",
+	          "4":"Very Confident<br>",
+	          "5":"Extremely Confident"
+	        },
+	       "defaultValue":"2"
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
