@@ -36,18 +36,6 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1<br>",
-        "2": "L2<br>",
-        "3": "L3<br>",
-        "4": "L4<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
     { "name": "Drivetrain Motor",
       "code": "mot",
       "type": "radio",
@@ -58,10 +46,6 @@ var config_data = `
         "x": "Other<br>"
       },
       "defaultValue":"x"
-    },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
     },
     { "name": "Floor pickup Cones",
       "code": "fco",
