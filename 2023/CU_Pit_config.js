@@ -45,9 +45,10 @@ var config_data = `
         "a": "Arm<br>",
         "t": "Telescope<br>",
         "s": "Scissor lift<br>",
-        "o": "Other"
+        "o": "Other<br>",
+        "n": "None<br>"
       },
-      "defaultValue": "o"
+      "defaultValue": "n"
     },
      { "name": "Intake Mechanism",
       "code": "int",
@@ -59,7 +60,7 @@ var config_data = `
         "m": "Combo<br>",
         "b": "Flexible Band<br>",
         "s": "Shovel<br>",
-        "o": "Other"
+        "o": "Other<br>"
       },
       "defaultValue": "o"
     },
