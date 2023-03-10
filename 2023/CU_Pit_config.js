@@ -57,18 +57,6 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "Floor pickup Cones",
-      "code": "fco",
-      "type": "bool"
-    },
-    { "name": "Floor pickup Cubes",
-      "code": "fcu",
-      "type": "bool"
-    },
-    { "name": "Cross Charging Station",
-      "code": "ccs",
-      "type": "bool"
-    },
     { "name": "Autos",
       "code": "aut",
       "type": "text",
@@ -87,7 +75,7 @@ var config_data = `
       },
       "defaultValue": "n"
     },
-    { "name": "Crosses Cable",
+    { "name": "Crosses Cable?",
       "code": "acc",
       "type": "bool"
     },
@@ -157,7 +145,18 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Substation Pick UP",
+    { "name": "Substation Pick UP Piece",
+      "code": "spp",
+      "type": "radio",
+      "choices": {
+        "o": "Cone<br>",
+        "u": "Cube<br>",
+        "b": "Both<br>",
+        "x": "None"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Substation Pick UP Location",
       "code": "spu",
       "type": "radio",
       "choices": {
@@ -167,6 +166,12 @@ var config_data = `
         "x": "None"
       },
       "defaultValue": "x"
+    }
+    { "name": "Describe their Teleop Strategy in Detail",
+      "code": "co",
+      "type": "text",
+      "size": 25,
+      "maxSize": 500
     }
   ],
   "endgame": [
