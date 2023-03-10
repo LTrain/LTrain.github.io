@@ -97,12 +97,12 @@ var config_data = `
         "x": "Not attempted"
       },
       "defaultValue": "x"
-    }
+    },
     { "name": "Auton Docking Timer",
       "code": "adt",
       "type": "counter"
     },
-  { "name": "Describe their Auton in Detail",
+    { "name": "Describe their Auton in Detail",
       "code": "co",
       "type": "text",
       "size": 15,
@@ -110,7 +110,7 @@ var config_data = `
     }
   ],
   "teleop": [
-      { "name": "Teleop Cycle Timer",
+    { "name": "Teleop Cycle Timer",
       "code": "tct",
       "type": "counter"
     },
@@ -166,7 +166,7 @@ var config_data = `
         "x": "None"
       },
       "defaultValue": "x"
-    }
+    },
     { "name": "Describe their Teleop Strategy in Detail",
       "code": "co",
       "type": "text",
