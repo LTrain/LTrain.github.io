@@ -56,7 +56,7 @@ var config_data = `
         "x": "Other<br>"
       },
       "defaultValue":"x"
-    },
+    }
   ],
   "auton": [
    { "name": "Start with Piece?",
@@ -188,5 +188,5 @@ var config_data = `
       "code": "dn",
       "type": "counter"
     }
-  ],
+  ]
 }`;
