@@ -37,6 +37,29 @@ var config_data = `
         "b": "Butterfly/Grashopper<br>",
         "m": "Mechanum<br>",
         "o": "Other"
+     },
+     { "name": "Delivery Mechanism",
+      "code": "del",
+      "type": "radio",
+      "choices": {
+        "a": "Arm<br>",
+        "t": "Telescope<br>",
+        "s": "Scissor lift<br>",
+        "o": "Other"
+      },
+      "defaultValue": "o"
+    },
+     { "name": "Intake Mechanism",
+      "code": "int",
+      "type": "radio",
+      "choices": {
+        "c": "Claw<br>",
+        "l": "Linear Slide<br>",
+        "w": "Wheels<br>",
+        "m": "Combo<br>",
+        "b": "Flexible Band<br>",
+        "s": "Shovel<br>",
+        "o": "Other"
       },
       "defaultValue": "o"
     },
