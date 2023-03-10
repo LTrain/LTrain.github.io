@@ -48,7 +48,7 @@ var config_data = `
         "t": "Telescope<br>",
         "s": "Scissor lift<br>",
         "o": "Other<br>",
-        "n": "None<br>"
+        "n": "None"
       },
       "defaultValue": "n"
     },
@@ -62,7 +62,7 @@ var config_data = `
         "m": "Combo<br>",
         "b": "Flexible Band<br>",
         "s": "Shovel<br>",
-        "o": "Other<br>"
+        "o": "Other"
       },
       "defaultValue": "o"
     },
@@ -79,7 +79,7 @@ var config_data = `
         "n": "Neo<br>",
         "f": "Falcon<br>",
         "c": "CIM<br>",
-        "x": "Other<br>"
+        "x": "Other"
       },
       "defaultValue":"x"
     }
