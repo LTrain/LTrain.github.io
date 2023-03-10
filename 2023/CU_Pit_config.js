@@ -57,12 +57,6 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "Autos",
-      "code": "aut",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
-    }
   ],
   "auton": [
    { "name": "Start with Piece?",
@@ -103,7 +97,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Describe their Auton in Detail",
-      "code": "co",
+      "code": "aco",
       "type": "text",
       "size": 15,
       "maxSize": 350
@@ -168,7 +162,7 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Describe their Teleop Strategy in Detail",
-      "code": "co",
+      "code": "tst",
       "type": "text",
       "size": 25,
       "maxSize": 500
