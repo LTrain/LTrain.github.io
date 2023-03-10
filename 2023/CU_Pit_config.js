@@ -8,22 +8,22 @@ var config_data = `
       "code": "t",
       "type": "number"
     },
-    { "name": "Length",
+    { "name": "Length (in)",
       "code": "len",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Width",
+    { "name": "Width (in)",
       "code": "wid",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Height",
+    { "name": "Height (in)",
       "code": "hei",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Weight",
+    { "name": "Weight (lbs)",
       "code": "wei",
       "type": "number",
       "defaultValue": "0"
