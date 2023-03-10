@@ -71,7 +71,7 @@ var config_data = `
     "choices": {
       "o": "Cone<br>",
       "u": "Cube<br>",
-      "n": "None",
+      "n": "None"
       },
       "defaultValue": "n"
     },
