@@ -184,6 +184,19 @@ var config_data = `
       },
       "defaultValue": "x"
     },
+    { "name": "Where can they deliver",
+      "code": "det",
+      "type": "radio",
+      "choices": {
+        "u": "Upper<br>",
+        "l": "Mid<br>",
+        "b": "Hybrid<br>",
+        "c": "Any Cone Space<br>",
+        "e": "Any Cube Space<br>",
+        "x": "None"
+      },
+      "defaultValue": "x"
+    },
     { "name": "Describe their Teleop Strategy in Detail",
       "code": "tst",
       "type": "text",
