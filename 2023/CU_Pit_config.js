@@ -37,7 +37,9 @@ var config_data = `
         "b": "Butterfly/Grashopper<br>",
         "m": "Mechanum<br>",
         "o": "Other"
-     },
+      },
+     "defaultValue": "o"
+    },
      { "name": "Delivery Mechanism",
       "code": "del",
       "type": "radio",
