@@ -100,7 +100,7 @@ var config_data = `
     }
     { "name": "Auton Docking Timer",
       "code": "adt",
-      "type": "timer"
+      "type": "counter"
     },
   { "name": "Describe their Auton in Detail",
       "code": "co",
@@ -112,7 +112,7 @@ var config_data = `
   "teleop": [
       { "name": "Teleop Cycle Timer",
       "code": "tct",
-      "type": "cycle"
+      "type": "counter"
     },
     { "name": "Feeder Count<br>(Feeds another bot)",
       "code": "tfc",
@@ -177,7 +177,7 @@ var config_data = `
   "endgame": [
       { "name": "Docking Timer",
       "code": "dt",
-      "type": "timer"
+      "type": "counter"
     },
     { "name": "Final Status",
       "code": "fs",
