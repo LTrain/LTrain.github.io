@@ -260,7 +260,7 @@ var config_data = `
         "defaultValue":"x"
     },
     { "name": "Deployment Rating",
-        "code":"dr",
+        "code":"dpr",
         "title": "Deployment Rating",
         "type":"radio",
         "choices":{
