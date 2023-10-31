@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023midet",
+      "defaultValue": "2023mibg",
       "required": "true",
       "disabled": "true"
     },
